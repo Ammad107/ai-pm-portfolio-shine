@@ -34,12 +34,13 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-background">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
             Let's Connect
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss AI product opportunities, collaboration, or just want to connect? 
-            I'm always open to interesting conversations about product management and AI innovation.
+          <div className="w-16 h-1 bg-gradient-hero mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
+            Ready to transform your next big idea into reality? Let's discuss how we can build 
+            something extraordinary together and drive meaningful business impact.
           </p>
         </div>
 

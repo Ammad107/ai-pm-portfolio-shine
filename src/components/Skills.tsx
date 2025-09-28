@@ -65,12 +65,13 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Skills & Expertise
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+            Skills
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive skill set spanning product management, technical implementation, 
-            and strategic business development.
+          <div className="w-16 h-1 bg-gradient-hero mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
+            A comprehensive toolkit spanning cutting-edge technology, strategic thinking, 
+            and leadership excellence that drives innovation and business success.
           </p>
         </div>
 

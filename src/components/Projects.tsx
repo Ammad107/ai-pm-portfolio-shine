@@ -27,12 +27,13 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gray-light">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Featured Project
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+            Featured Work
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive look at my key project that demonstrates end-to-end product leadership 
-            and technical execution.
+          <div className="w-16 h-1 bg-gradient-hero mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
+            Showcasing end-to-end product leadership that transforms vision into reality, 
+            delivering measurable impact and driving business growth.
           </p>
         </div>
 

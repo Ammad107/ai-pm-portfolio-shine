@@ -47,11 +47,13 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-gray-light">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            Professional Experience
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+            Experience
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A track record of driving innovation and growth across multiple roles and industries.
+          <div className="w-16 h-1 bg-gradient-hero mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
+            A proven track record of transforming challenges into opportunities and 
+            delivering exceptional results across multiple industries and roles.
           </p>
         </div>
 
