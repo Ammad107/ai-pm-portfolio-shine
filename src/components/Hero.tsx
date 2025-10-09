@@ -65,10 +65,16 @@ const Hero = () => {
             <Button
               variant="ghost"
               size="lg"
+              asChild
               className="text-muted-foreground hover:text-foreground px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105"
             >
-              <Download className="mr-2 h-5 w-5" />
-              Download Resume
+              <a
+                href="/Ammad_Sattar_Resume.pdf"
+                download="Ammad_Sattar_Resume.pdf"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download Resume
+              </a>
             </Button>
           </div>
 
