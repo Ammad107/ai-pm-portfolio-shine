@@ -21,7 +21,8 @@ const Projects = () => {
         { icon: DollarSign, label: "Revenue Impact", value: "Significant" }
       ],
       technologies: ["Product Strategy", "User Research", "MVP Development", "Analytics", "Payment Integration"],
-      status: "Ongoing"
+      status: "Ongoing",
+      loomUrl: "https://www.loom.com/embed/2a69eceec2c24f30ae43000d5014c096"
     },
     {
       title: "TimeLens (AI-Powered Image Transformation Tool)",
@@ -81,6 +82,22 @@ const Projects = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
+
+                {project.loomUrl && (
+                  <div className="rounded-lg overflow-hidden bg-background">
+                    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                      <iframe 
+                        src={project.loomUrl}
+                        frameBorder="0"
+                        allowFullScreen
+                        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                      ></iframe>
+                    </div>
+                    <p className="text-xs text-muted-foreground text-center py-2">
+                      Project Walkthrough
+                    </p>
+                  </div>
+                )}
 
                 {project.videoUrl && (
                   <div className="rounded-lg overflow-hidden bg-background">
