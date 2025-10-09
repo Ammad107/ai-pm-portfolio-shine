@@ -69,8 +69,8 @@ const Hero = () => {
               className="text-muted-foreground hover:text-foreground px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105"
             >
               <a
-                href="/Ammad_Sattar_Resume.pdf"
-                download="Ammad_Sattar_Resume.pdf"
+                href="/Ammad_Sattar_Resume.docx"
+                download="Ammad_Sattar_Resume.docx"
               >
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
