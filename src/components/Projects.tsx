@@ -24,7 +24,7 @@ const Projects = () => {
       status: "Ongoing"
     },
     {
-      title: "Timeline Jesos (AI-Powered Image Transformation Tool)",
+      title: "TimeLens (AI-Powered Image Transformation Tool)",
       period: "2024",
       description: "A React.js frontend enabling users to upload photos and transform them into decade-specific styles (1950s–1990s) using multimodal AI technology.",
       achievements: [
@@ -39,7 +39,8 @@ const Projects = () => {
         { icon: DollarSign, label: "Processing", value: "Real-time" }
       ],
       technologies: ["React.js", "Multimodal AI", "API Integration", "Product Roadmap", "AI Ethics"],
-      status: "Completed"
+      status: "In Development",
+      videoUrl: "/videos/TimeLens.mp4"
     }
   ];
 
@@ -80,6 +81,22 @@ const Projects = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
+
+                {project.videoUrl && (
+                  <div className="rounded-lg overflow-hidden bg-background">
+                    <video 
+                      controls 
+                      className="w-full"
+                      preload="metadata"
+                    >
+                      <source src={project.videoUrl} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <p className="text-xs text-muted-foreground text-center py-2">
+                      Project Demo - Currently in development
+                    </p>
+                  </div>
+                )}
 
                 <div className="grid grid-cols-3 gap-4">
                   {project.metrics.map((metric, index) => {
