@@ -1,111 +1,51 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Brain, Code, Users, Wrench } from "lucide-react";
-
 const Skills = () => {
-  const skillCategories = [
+  const categories = [
     {
-      title: "Product Management",
-      icon: Brain,
-      skills: [
-        "AI Workflows",
-        "Prompt Engineering", 
-        "MVP Design",
-        "Agile/Scrum",
-        "Requirements Gathering",
-        "Product Strategy",
-        "Roadmap Planning"
-      ],
-      color: "bg-blue-primary"
+      title: "PRODUCT & AI",
+      skills: ["AI Workflows", "Prompt Engineering", "MVP Design", "Agile/Scrum", "Product Strategy", "Roadmap Planning", "Requirements Gathering"]
     },
     {
-      title: "Technical Expertise",
-      icon: Code,
-      skills: [
-        "Python",
-        "SQL", 
-        "API Integration",
-        "Data Modeling",
-        "Automation",
-        "Zapier",
-        "Google Sheets"
-      ],
-      color: "bg-green-accent"
+      title: "TECHNICAL",
+      skills: ["Python", "SQL", "API Integration", "Data Modeling", "Automation", "React.js", "LangChain"]
     },
     {
-      title: "Business & Collaboration",
-      icon: Users,
-      skills: [
-        "Market Research",
-        "Product Positioning",
-        "Growth Strategy",
-        "Cross-Functional Leadership",
-        "Stakeholder Communication",
-        "Team Management"
-      ],
-      color: "bg-blue-primary"
+      title: "TOOLS & PLATFORMS",
+      skills: ["Jira", "Asana", "ClickUp", "Trello", "Notion", "Zapier", "Git", "Streamlit"]
     },
     {
-      title: "Tools & Platforms",
-      icon: Wrench,
-      skills: [
-        "Jira",
-        "Asana", 
-        "ClickUp",
-        "Trello",
-        "Notion",
-        "CRM Systems",
-        "Git"
-      ],
-      color: "bg-green-accent"
+      title: "CERTIFICATIONS",
+      skills: ["AI Product Management", "Data Analytics"]
     }
   ];
 
   return (
-    <section id="skills" className="py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
-            Skills
-          </h2>
-          <div className="w-16 h-1 bg-gradient-hero mx-auto mb-6"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-            A comprehensive toolkit spanning cutting-edge technology, strategic thinking, 
-            and leadership excellence that drives innovation and business success.
-          </p>
-        </div>
+    <section id="skills" className="py-24 bg-background">
+      <div className="max-w-3xl mx-auto px-6">
+        <h2
+          className="text-3xl sm:text-4xl text-foreground mb-12 text-center"
+          style={{ fontFamily: "'Playfair Display', serif" }}
+        >
+          Skills & Certifications
+        </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {skillCategories.map((category, index) => {
-            const IconComponent = category.icon;
-            return (
-              <Card key={index} className="shadow-card hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className={`p-2 rounded-lg ${category.color}`}>
-                      <IconComponent className="h-6 w-6 text-white" />
-                    </div>
-                    <CardTitle className="text-xl text-foreground">
-                      {category.title}
-                    </CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill, skillIndex) => (
-                      <Badge 
-                        key={skillIndex}
-                        variant="outline"
-                        className="border-muted text-muted-foreground hover:border-blue-primary hover:text-blue-primary transition-colors"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
+        <div className="space-y-10">
+          {categories.map((category, index) => (
+            <div key={index} className="text-center">
+              <h3 className="text-xs font-semibold tracking-[0.2em] text-primary mb-4 uppercase">
+                {category.title}
+              </h3>
+              <div className="flex flex-wrap justify-center gap-3">
+                {category.skills.map((skill, i) => (
+                  <span
+                    key={i}
+                    className="px-4 py-2 text-sm rounded-full border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Navigation = () => {
@@ -8,9 +7,9 @@ const Navigation = () => {
   const navItems = [
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
-    { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
-    { href: "#contact", label: "Contact" },
+    { href: "#skills", label: "Skills" },
+    { href: "#contact", label: "Connect" },
   ];
 
   const scrollToSection = (href: string) => {
@@ -22,46 +21,43 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-foreground">
+          <button
+            onClick={() => scrollToSection("#")}
+            className="text-lg font-semibold text-foreground tracking-tight"
+            style={{ fontFamily: "'Playfair Display', serif" }}
+          >
             Ammad Sattar
-          </div>
+          </button>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
                 {item.label}
               </button>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </Button>
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-foreground p-2">
+              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 space-y-2">
+          <div className="md:hidden py-4 space-y-1 border-t border-border">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-2 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors duration-200"
+                className="block w-full text-left px-2 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 {item.label}
               </button>
