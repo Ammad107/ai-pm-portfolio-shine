@@ -5,7 +5,7 @@ import { Building, Calendar } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      title: "Founder & Technical Project Lead",
+      title: "AI Product Manager",
       company: "Think Agents",
       location: "Islamabad, Pakistan",
       period: "June 2024 – Present",
@@ -40,6 +40,19 @@ const Experience = () => {
         "Conducted market research and analysis, increasing lead generation by 30% through targeted initiatives"
       ],
       tags: ["B2B Marketing", "Technical Leadership", "Market Research", "Growth Strategy"]
+    },
+    {
+      title: "Business Analyst",
+      company: "First Woman Bank",
+      location: "Abbottabad, Pakistan",
+      period: "Apr 2025 – Nov 2025",
+      achievements: [
+        "Analyzed financial and customer datasets using Excel and AI-assisted analytics tools to identify behavioral patterns and growth opportunities",
+        "Designed and implemented AI-powered data automation to streamline reporting workflows using Jira and Notion, reducing analysis time by 30%",
+        "Supported digital transformation initiatives and cross-functional product delivery, translating data insights into strategic recommendations for leadership teams",
+        "Applied AI-driven model evaluation and analytical reasoning using Python and Mixpanel to create data-informed product concepts, contributing to the AI Product Management roadmap"
+      ],
+      tags: ["Financial Analytics", "AI Automation", "Digital Transformation", "Product Management"]
     }
   ];
 
