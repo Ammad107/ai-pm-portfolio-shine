@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Users, TrendingUp, DollarSign } from "lucide-react";
+import { ExternalLink, Users, TrendingUp, DollarSign, Database } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -42,6 +42,25 @@ const Projects = () => {
       technologies: ["React.js", "Multimodal AI", "API Integration", "Product Roadmap", "AI Ethics"],
       status: "In Development",
       videoUrl: "/videos/TimeLens.mp4"
+    },
+    {
+      title: "Text-to-SQL AI Application",
+      period: "2024",
+      description: "A fully local Text-to-SQL application that turns plain English into database queries instantly — bridging the gap between business teams and databases without API costs or cloud dependency.",
+      achievements: [
+        "Built end-to-end NLP-to-SQL pipeline enabling non-technical users to query databases using natural language",
+        "Implemented schema-grounded SQL generation with deterministic outputs (temperature=0) for reliable query results",
+        "Designed modular architecture scalable to Postgres/Snowflake, demonstrating production-grade thinking in a portfolio build",
+        "Reduced analyst dependency by enabling self-service analytics, accelerating decision cycles across business teams"
+      ],
+      metrics: [
+        { icon: TrendingUp, label: "Model", value: "SmolLM2 1.7B" },
+        { icon: Users, label: "Runs", value: "100% Local" },
+        { icon: DollarSign, label: "API Cost", value: "$0" }
+      ],
+      technologies: ["Python", "LangChain", "Ollama", "SQLite", "Streamlit", "Prompt Engineering"],
+      status: "Live",
+      liveUrl: "https://my-cool-sql-ai.streamlit.app/"
     }
   ];
 
@@ -59,7 +78,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8 [&>*:last-child:nth-child(odd)]:lg:col-span-2 [&>*:last-child:nth-child(odd)]:lg:max-w-[calc(50%-1rem)] [&>*:last-child:nth-child(odd)]:lg:mx-auto">
           {projects.map((project, projectIndex) => (
             <Card key={projectIndex} className="shadow-card hover:shadow-lg transition-shadow duration-300">
               <CardHeader>
@@ -71,8 +90,8 @@ const Projects = () => {
                     <p className="text-muted-foreground">
                       {project.period}
                     </p>
-                    <Badge className={`mt-2 ${project.status === 'Ongoing' ? 'bg-green-light text-green-accent' : 'bg-blue-light text-blue-primary'}`}>
-                      {project.status}
+                    <Badge className={`mt-2 ${project.status === 'Ongoing' || project.status === 'Live' ? 'bg-green-light text-green-accent' : 'bg-blue-light text-blue-primary'}`}>
+                      {project.status === 'Live' ? '🟢 Live' : project.status}
                     </Badge>
                   </div>
                 </div>
@@ -113,6 +132,18 @@ const Projects = () => {
                       Project Demo - Currently in development
                     </p>
                   </div>
+                )}
+
+                {project.liveUrl && (
+                  <a 
+                    href={project.liveUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-gradient-hero text-white text-sm font-medium hover:opacity-90 transition-opacity"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                    Try Live Demo
+                  </a>
                 )}
 
                 <div className="grid grid-cols-3 gap-4">
