@@ -44,6 +44,25 @@ const Projects = () => {
       videoUrl: "/videos/TimeLens.mp4"
     },
     {
+      title: "Personal AI Data Analyst",
+      period: "2024",
+      description: "An agentic AI application that turns raw datasets into visual insights using plain English — bridging the gap between messy CSVs and clear business decisions with automated cleaning, LLM reasoning, and interactive visualizations.",
+      achievements: [
+        "Built end-to-end agentic pipeline: file upload → auto-cleaning → LLM inference → dynamic Plotly visualization",
+        "Integrated Groq Cloud with Llama 3 for zero-latency inference, delivering a snappy real-time analytics UX",
+        "Engineered modular data cleaning logic handling real-world dirty data (formatting, currency, whitespace) automatically",
+        "Enabled self-service analytics for non-technical stakeholders, eliminating 3-day analyst wait times"
+      ],
+      metrics: [
+        { icon: TrendingUp, label: "LLM", value: "Llama 3" },
+        { icon: Users, label: "Inference", value: "Groq Cloud" },
+        { icon: DollarSign, label: "Cleaning", value: "Automated" }
+      ],
+      technologies: ["Python", "Streamlit", "Groq Cloud", "Llama 3", "Plotly", "Pandas"],
+      status: "Live",
+      liveUrl: "https://ai-cooldata-analyst.streamlit.app/"
+    },
+    {
       title: "Text-to-SQL AI Application",
       period: "2024",
       description: "A fully local Text-to-SQL application that turns plain English into database queries instantly — bridging the gap between business teams and databases without API costs or cloud dependency.",
