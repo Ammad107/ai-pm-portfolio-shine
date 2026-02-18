@@ -30,6 +30,13 @@ const Projects = () => {
       status: "Live",
       liveUrl: "https://my-cool-sql-ai.streamlit.app/",
     },
+    {
+      title: "Veriflow AI",
+      description: "AI-powered Accounts Payable platform for SMEs and insurance firms — stops revenue leakage through duplicate detection, price creep monitoring, and AI invoice extraction with audit-ready storage.",
+      tags: ["AI Agents", "Fintech", "Accounts Payable"],
+      status: "Live",
+      liveUrl: "https://veriflowai.lovable.app/",
+    },
   ];
 
   return (

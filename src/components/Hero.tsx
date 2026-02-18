@@ -1,14 +1,13 @@
 import { Mail, Linkedin, Github, Download } from "lucide-react";
+import profilePhoto from "@/assets/ammad-profile.jpeg";
 
 const Hero = () => {
   return (
     <section className="min-h-[85vh] flex items-center justify-center bg-background pt-16">
       <div className="max-w-3xl mx-auto px-6 text-center animate-fade-in">
-        {/* Avatar placeholder */}
-        <div className="w-28 h-28 rounded-full bg-muted border-2 border-border mx-auto mb-8 flex items-center justify-center overflow-hidden">
-          <span className="text-3xl text-muted-foreground font-semibold" style={{ fontFamily: "'Playfair Display', serif" }}>
-            AS
-          </span>
+        {/* Profile Photo */}
+        <div className="w-28 h-28 rounded-full border-2 border-border mx-auto mb-8 overflow-hidden">
+          <img src={profilePhoto} alt="Ammad Sattar" className="w-full h-full object-cover" />
         </div>
 
         <h1
@@ -19,7 +18,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg text-muted-foreground mb-4">
-          AI Product Manager & Innovation Leader
+          AI Product Manager & Consultant
         </p>
 
         <p className="text-base text-muted-foreground max-w-xl mx-auto leading-relaxed mb-10 italic">
