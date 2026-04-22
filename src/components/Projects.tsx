@@ -3,13 +3,6 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "ScalrPay E-Commerce Platform",
-      description: "A creator-focused e-commerce platform enabling direct monetization for content creators with integrated payments, affiliate tracking, and analytics.",
-      tags: ["Product Strategy", "User Research", "Analytics"],
-      status: "Ongoing",
-      loomUrl: "https://www.loom.com/embed/2a69eceec2c24f30ae43000d5014c096",
-    },
-    {
       title: "TimeLens",
       description: "React.js frontend enabling users to upload photos and transform them into decade-specific styles using multimodal AI (Gemini 2.5 Flash).",
       tags: ["React.js", "Multimodal AI", "Product Roadmap"],
