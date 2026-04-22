@@ -56,18 +56,6 @@ const Projects = () => {
                   </video>
                 </div>
               )}
-              {project.loomUrl && (
-                <div className="rounded-lg overflow-hidden mb-4 bg-muted">
-                  <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                    <iframe
-                      src={project.loomUrl}
-                      frameBorder="0"
-                      allowFullScreen
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                    />
-                  </div>
-                </div>
-              )}
 
               {/* Status badge */}
               <div className="flex items-center justify-between mb-2">
