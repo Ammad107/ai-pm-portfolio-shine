@@ -3,13 +3,6 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "ScalrPay E-Commerce Platform",
-      description: "A creator-focused e-commerce platform enabling direct monetization for content creators with integrated payments, affiliate tracking, and analytics.",
-      tags: ["Product Strategy", "User Research", "Analytics"],
-      status: "Ongoing",
-      loomUrl: "https://www.loom.com/embed/2a69eceec2c24f30ae43000d5014c096",
-    },
-    {
       title: "TimeLens",
       description: "React.js frontend enabling users to upload photos and transform them into decade-specific styles using multimodal AI (Gemini 2.5 Flash).",
       tags: ["React.js", "Multimodal AI", "Product Roadmap"],
@@ -61,18 +54,6 @@ const Projects = () => {
                   <video controls preload="metadata" className="w-full aspect-video object-cover">
                     <source src={project.videoUrl} type="video/mp4" />
                   </video>
-                </div>
-              )}
-              {project.loomUrl && (
-                <div className="rounded-lg overflow-hidden mb-4 bg-muted">
-                  <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                    <iframe
-                      src={project.loomUrl}
-                      frameBorder="0"
-                      allowFullScreen
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                    />
-                  </div>
                 </div>
               )}
 
