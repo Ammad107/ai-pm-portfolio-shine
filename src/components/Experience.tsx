@@ -50,13 +50,11 @@ const Experience = () => {
 
   return (
     <section id="experience" className="py-24 bg-background">
-      <div className="max-w-3xl mx-auto px-6">
-        <h2
-          className="text-3xl sm:text-4xl text-foreground mb-12"
-          style={{ fontFamily: "'Playfair Display', serif" }}
-        >
-          Experience
-        </h2>
+      <div className="max-w-[1080px] mx-auto px-6 lg:px-12">
+        <div className="mb-14 max-w-2xl">
+          <p className="section-label">Experience</p>
+          <h2 className="section-title">Building products, teams, and leverage</h2>
+        </div>
 
         <div className="space-y-10">
           {experiences.map((exp, index) => (
