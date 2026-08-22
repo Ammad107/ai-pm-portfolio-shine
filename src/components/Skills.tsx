@@ -19,26 +19,24 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24 bg-background">
-      <div className="max-w-3xl mx-auto px-6">
-        <h2
-          className="text-3xl sm:text-4xl text-foreground mb-12 text-center"
-          style={{ fontFamily: "'Playfair Display', serif" }}
-        >
-          Skills & Certifications
-        </h2>
+    <section id="skills" className="py-24 bg-secondary">
+      <div className="max-w-[1080px] mx-auto px-6 lg:px-12">
+        <div className="mb-14 max-w-2xl">
+          <p className="section-label">Toolkit</p>
+          <h2 className="section-title">Skills &amp; Certifications</h2>
+        </div>
 
         <div className="space-y-10">
           {categories.map((category, index) => (
-            <div key={index} className="text-center">
-              <h3 className="text-xs font-semibold tracking-[0.2em] text-primary mb-4 uppercase">
+            <div key={index}>
+              <h3 className="text-xs font-bold tracking-[0.14em] text-primary mb-4 uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>
                 {category.title}
               </h3>
-              <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex flex-wrap gap-2.5">
                 {category.skills.map((skill, i) => (
                   <span
                     key={i}
-                    className="px-4 py-2 text-sm rounded-full border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-default"
+                    className="px-4 py-2 text-sm rounded-full bg-card border border-border text-foreground hover:border-primary hover:text-primary transition-colors cursor-default"
                   >
                     {skill}
                   </span>

@@ -18,13 +18,11 @@ const TableauProjects = () => {
 
   return (
     <section className="py-24 bg-background">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2
-          className="text-3xl sm:text-4xl text-foreground mb-12"
-          style={{ fontFamily: "'Playfair Display', serif" }}
-        >
-          Tableau Analytics
-        </h2>
+      <div className="max-w-[1080px] mx-auto px-6 lg:px-12">
+        <div className="mb-14 max-w-2xl">
+          <p className="section-label">Analytics</p>
+          <h2 className="section-title">Tableau dashboards that answer questions</h2>
+        </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
           {projects.map((project, index) => (
