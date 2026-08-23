@@ -34,15 +34,6 @@ const projects: Project[] = [
     liveUrl: "https://aiprdstudio.lovable.app/",
   },
   {
-    title: "TimeLens",
-    tag: "Multimodal AI",
-    status: "In Development",
-    summary:
-      "React.js frontend enabling users to upload photos and transform them into decade-specific styles using multimodal AI (Gemini 2.5 Flash).",
-    tags: ["React.js", "Multimodal AI", "Product Roadmap"],
-    videoUrl: "/videos/TimeLens.mp4",
-  },
-  {
     title: "Personal AI Data Analyst",
     tag: "Agentic Analytics",
     status: "Live",
