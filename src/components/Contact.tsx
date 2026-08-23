@@ -1,4 +1,5 @@
 import { Mail, Linkedin, Github, Download } from "lucide-react";
+import resumeAsset from "@/assets/Ammad_Sattar_Resume.pdf.asset.json";
 
 const Contact = () => {
   return (
@@ -39,7 +40,7 @@ const Contact = () => {
             <Mail size={18} />
           </a>
           <a
-            href="/Ammad_Sattar_Resume.pdf"
+            href={resumeAsset.url}
             download="Ammad_Sattar_Resume.pdf"
             className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground transition-colors"
           >
