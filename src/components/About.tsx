@@ -1,4 +1,4 @@
-import profilePhoto from "@/assets/ammad-profile.jpeg";
+import profilePhoto from "@/assets/ammad-profile.jpeg.asset.json";
 
 const About = () => {
   return (
@@ -7,7 +7,7 @@ const About = () => {
         <div className="grid lg:grid-cols-[1fr_1.45fr] gap-16 lg:gap-20 items-start">
           <div className="lg:sticky lg:top-28">
             <img
-              src={profilePhoto}
+              src={profilePhoto.url}
               alt="Ammad Sattar, AI Product Manager"
               className="w-full rounded-2xl object-cover aspect-[4/5] mb-8"
               loading="lazy"

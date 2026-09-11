@@ -1,6 +1,18 @@
 const Experience = () => {
   const experiences = [
     {
+      title: "AI Automation Specialist",
+      company: "The Elevated Investment Group",
+      location: "Remote · USA",
+      period: "Current",
+      achievements: [
+        "Build and manage AI-powered automations that eliminate repetitive manual work and improve operational efficiency across real estate workflows",
+        "Design and optimize automated workflows for lead capture, qualification, follow-up, and CRM processes to turn more prospects into opportunities",
+        "Develop data scraping and lead generation systems to identify, enrich, and deliver high-quality real estate prospects at scale",
+        "Maintain and optimize company websites and digital systems to improve performance, user experience, and conversion from traffic into qualified leads"
+      ]
+    },
+    {
       title: "Business Analyst",
       company: "First Woman Bank",
       location: "Abbottabad, Pakistan",
