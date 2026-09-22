@@ -48,7 +48,7 @@ const Experience = () => {
       ]
     },
     {
-      title: "Creative Director",
+      title: "Project Manager",
       company: "The Talent Output INC",
       location: "USA",
       period: "Jan 2021 – Nov 2023",
