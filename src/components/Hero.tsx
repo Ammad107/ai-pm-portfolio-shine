@@ -46,6 +46,15 @@ const Hero = () => {
               >
                 Let's Connect
               </a>
+              <a
+                href="https://github.com/Ammad107"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="w-[46px] h-[46px] rounded-[5px] border-[1.5px] border-border flex items-center justify-center text-foreground hover:border-primary hover:text-primary transition-colors"
+              >
+                <Github size={17} />
+              </a>
             </div>
           </div>
 
