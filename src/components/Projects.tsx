@@ -60,6 +60,21 @@ const projects: Project[] = [
     tags: ["AI Agents", "Fintech", "Accounts Payable"],
     liveUrl: "https://veriflowai.lovable.app/",
   },
+  {
+    title: "ScopeZero",
+    tag: "Discovery-to-Build Engine",
+    status: "Live",
+    summary:
+      "An end-to-end interactive PM engine that bridges the gap between raw customer discovery and functional code.",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://v0-scopezero.vercel.app/",
+    bullets: [
+      "Idea Genesis: Captures raw product concepts and structures customer pain points.",
+      "Discovery Gauntlet: Simulates rigorous \"Mom Test\" interviews and evaluates Riskiest Assumption Test (RAT) metrics.",
+      "Opportunity Mapping: Visualizes trade-offs via an interactive Opportunity Solution Tree (OST) to narrow scope.",
+      "Live Prototyping: Renders a functional, interactive micro-app directly from discovery insights.",
+    ],
+  },
 ];
 
 const StatusPill = ({ status }: { status: string }) => (

@@ -26,7 +26,7 @@ const Contact = () => {
             <Linkedin size={18} />
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/Ammad107"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground transition-colors"
