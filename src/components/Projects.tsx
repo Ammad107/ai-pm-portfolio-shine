@@ -61,6 +61,21 @@ const projects: Project[] = [
     liveUrl: "https://veriflowai.lovable.app/",
   },
   {
+    title: "CortexOS",
+    tag: "HelloPM Challenge - Quest 5",
+    status: "Live",
+    summary:
+      "An advanced enterprise LLM observability and evaluation studio built for rigorous production testing, compliance auditing, and cost-latency optimization.",
+    tags: ["React", "Tailwind CSS", "TypeScript", "PostHog SDK"],
+    liveUrl: "https://cortexos-phi.vercel.app/",
+    bullets: [
+      "Evaluation Bench: Simulated production runs tracking hallucination risk scores, execution latency, and token cost efficiency.",
+      "Model Comparator: Split-screen A/B testing suite benchmarking single prompts across multiple LLMs simultaneously.",
+      "Guardrails & Rubrics: Configurable security filters (PII shield, injection defense) paired with custom LLM-as-a-judge scoring weights.",
+      "Audit & Telemetry: Exportable compliance audit logs (JSON/CSV) backed by a live PostHog telemetry event monitor.",
+    ],
+  },
+  {
     title: "ScopeZero",
     tag: "Discovery-to-Build Engine",
     status: "Live",
