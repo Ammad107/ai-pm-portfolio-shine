@@ -211,9 +211,22 @@ const Projects = () => {
                 {project.title}
               </h3>
 
-              <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
                 {project.summary}
               </p>
+
+              {project.bullets && (
+                <ul className="mb-5 space-y-2.5">
+                  {project.bullets.map((b, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1.5 text-[0.55rem]">●</span>
+                      <span className="text-[0.85rem] text-muted-foreground leading-relaxed">
+                        {b}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <div className="flex flex-wrap gap-1.5 mb-5">
                 {project.tags.map((t) => (

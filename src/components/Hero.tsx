@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 const stats = [
   { num: "40", sup: "%", label: "Manual Workload Reduced Through AI Workflows" },
