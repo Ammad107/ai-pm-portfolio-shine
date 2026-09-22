@@ -113,7 +113,7 @@ const Projects = () => {
     <section id="projects" className="py-24 bg-background">
       <div className="max-w-[1080px] mx-auto px-6 lg:px-12">
         <div className="mb-14 max-w-2xl">
-          <p className="section-label">Case Studies</p>
+          <p className="section-label">Projects</p>
           <h2 className="section-title">Work that moved the needle</h2>
         </div>
 
