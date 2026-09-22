@@ -60,6 +60,21 @@ const projects: Project[] = [
     tags: ["AI Agents", "Fintech", "Accounts Payable"],
     liveUrl: "https://veriflowai.lovable.app/",
   },
+  {
+    title: "ScopeZero",
+    tag: "Discovery-to-Build Engine",
+    status: "Live",
+    summary:
+      "An end-to-end interactive PM engine that bridges the gap between raw customer discovery and functional code.",
+    tags: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+    liveUrl: "https://v0-scopezero.vercel.app/",
+    bullets: [
+      "Idea Genesis: Captures raw product concepts and structures customer pain points.",
+      "Discovery Gauntlet: Simulates rigorous \"Mom Test\" interviews and evaluates Riskiest Assumption Test (RAT) metrics.",
+      "Opportunity Mapping: Visualizes trade-offs via an interactive Opportunity Solution Tree (OST) to narrow scope.",
+      "Live Prototyping: Renders a functional, interactive micro-app directly from discovery insights.",
+    ],
+  },
 ];
 
 const StatusPill = ({ status }: { status: string }) => (
@@ -196,9 +211,22 @@ const Projects = () => {
                 {project.title}
               </h3>
 
-              <p className="text-sm text-muted-foreground leading-relaxed mb-5 flex-1">
+              <p className="text-sm text-muted-foreground leading-relaxed mb-5">
                 {project.summary}
               </p>
+
+              {project.bullets && (
+                <ul className="mb-5 space-y-2.5">
+                  {project.bullets.map((b, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <span className="text-primary mt-1.5 text-[0.55rem]">●</span>
+                      <span className="text-[0.85rem] text-muted-foreground leading-relaxed">
+                        {b}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               <div className="flex flex-wrap gap-1.5 mb-5">
                 {project.tags.map((t) => (
