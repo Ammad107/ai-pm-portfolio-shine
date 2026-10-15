@@ -1,3 +1,5 @@
+import { ExternalLink } from "lucide-react";
+
 const Experience = () => {
   const experiences = [
     {
@@ -51,6 +53,7 @@ const Experience = () => {
       title: "Project Manager",
       company: "The Talent Output INC",
       location: "USA",
+      link: "https://ammad-va-pro.lovable.app",
       period: "Jan 2021 – Nov 2023",
       achievements: [
         "Directed B2B marketing strategy, expanding market share by 15% through positioning and differentiation",
@@ -75,6 +78,16 @@ const Experience = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground">{exp.title}</h3>
                   <p className="text-sm text-primary font-medium">{exp.company} · {exp.location}</p>
+                  {exp.link && (
+                    <a
+                      href={exp.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-[0.07em] text-primary hover:underline mt-2"
+                    >
+                      View Work <ExternalLink size={13} />
+                    </a>
+                  )}
                 </div>
                 <p className="text-sm text-muted-foreground whitespace-nowrap">{exp.period}</p>
               </div>
